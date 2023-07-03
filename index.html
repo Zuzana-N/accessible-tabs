@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible tabs practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h2 id="tabs-title">How I can help you</h2>
+        <div class="tabs-container">
+            <ul aria-labelledby="tabs-title">
+                <li><a href="#provide-scrunchies" id="tab-1" aria-describedby="focus-hint">Scrunchies</a></li>
+                <li><a href="#organize-workshop" id="tab-2">Furoshiki workshop</a></li>
+                <li><a href="#setup-store" id="tab-3">Setup online store</a></li>
+                <li><a href="#code" id="tab-4">Provide code</a></li>
+            </ul>
+            <div id="focus-hint" hidden>press tab to move to tabpanel</div>
+            <div class="tabs__panels">
+                <div id="provide-scrunchies" aria-labelledby="tab-1">
+                    <p>
+                        Are you looking for a gentle way to hold your hair? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi reprehenderit, accusamus aliquid libero rerum necessitatibus nesciunt dolore suscipit quo labore omnis, architecto excepturi quos, doloribus cumque ab consectetur similique natus?
+                    </p>
+                </div>
+                <div id="organize-workshop" aria-labelledby="tab-2">
+                    <p>
+                        Do you want to learn how to wrap gifts in fabric? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit reprehenderit praesentium harum mollitia debitis obcaecati officia aliquid vitae provident illum, consectetur nesciunt numquam! Numquam iusto beatae excepturi autem, cumque libero!
+                    </p>
+                </div>
+                <div id="setup-store" aria-labelledby="tab-3">
+                    <p>
+                        Are you starting an online store and need help? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur error repellendus magni ullam, nostrum dignissimos eius inventore harum? Laboriosam, esse doloremque! Beatae quo eligendi possimus voluptatem. Praesentium quaerat provident nihil.
+                    </p>
+                </div>
+                <div id="code" aria-labelledby="tab-4">
+                    <p>
+                        I can help with coding front-end of websites! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dolore dolorum, perspiciatis adipisci, mollitia voluptate, voluptatibus esse quia deleniti voluptates ducimus obcaecati aliquam. Sequi nobis, tempore illo repudiandae quam hic.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
